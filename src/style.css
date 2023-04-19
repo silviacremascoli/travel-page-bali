@@ -10,7 +10,7 @@ body {
   background: var(--primary-color);
 }
 header h1 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 96px;
   line-height: 1;
   margin: 30px 0;
