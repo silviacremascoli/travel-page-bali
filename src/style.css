@@ -7,7 +7,7 @@
 body {
   font-family: var(--default-font-family);
   margin: 0 auto;
-  background: black;
+  background: var(--primary-color);
 }
 header h1 {
   font-weight: 700;
@@ -62,6 +62,7 @@ footer {
 }
 
 .container {
+  max-width: 1200px;
   margin: 0 auto;
 }
 
