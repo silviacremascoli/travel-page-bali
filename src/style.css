@@ -17,8 +17,15 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 64px;
+}
+
+.grid-2-columns {
+  grid-template-columns: auto auto;
+}
+
+.grid-3-columns-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
 }
 
 header h1 {
@@ -72,6 +79,47 @@ header {
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 70px 0;
+}
+
+main {
+  background: black;
+}
+
+/* main img {
+  width: 570px;
+  height: fill;
+} */
+
+.img-responsive {
+  max-width: 100%;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: white;
+  margin: 0;
+}
+
+main p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  opacity: 0.5;
+  text-align: justify;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 5px;
+  color: white;
+  opacity: 0.3;
+  margin: 0 0 10px 0;
 }
 
 footer {
@@ -83,7 +131,6 @@ footer {
     url(../images/footer.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 70px 0;
 }
 
 footer h3 {
@@ -114,6 +161,11 @@ footer a {
   color: white;
   opacity: 0.7;
   text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 992px) {
@@ -131,5 +183,26 @@ footer a {
 
   header h3 {
     font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  footer section {
+    text-align: center;
+  }
+
+  footer section p {
+    text-align: center;
+  }
+
+  footer .grid {
+    grid-gap: 18px;
   }
 }
