@@ -9,6 +9,18 @@ body {
   margin: 0 auto;
   background: var(--primary-color);
 }
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 30px;
+}
+
 header h1 {
   font-weight: 600;
   font-size: 96px;
@@ -57,13 +69,51 @@ header {
   padding: 200px 0;
 }
 
-footer {
-  color: white;
-}
-
-.container {
+section {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+footer {
+  color: white;
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.8),
+      rgba(39, 32, 68, 0.7)
+    ),
+    url(../images/footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 0;
+}
+
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.7;
+  text-align: justify;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  opacity: 0.7;
+  text-decoration: none;
 }
 
 @media (max-width: 992px) {
