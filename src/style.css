@@ -98,7 +98,7 @@ main {
 }
 
 .temple img {
-  margin: 50px 0;
+  filter: contrast(120%);
 }
 
 main h2 {
