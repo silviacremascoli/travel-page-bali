@@ -91,7 +91,7 @@ main {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -151,6 +151,15 @@ section.secondary {
   background: var(--secondary-color);
   margin: 50px 0;
   text-align: justify;
+}
+
+.card-header.grid {
+  grid-gap: 0;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1 / 1;
 }
 
 .card-body {
@@ -255,5 +264,17 @@ footer a:hover {
 
   footer .grid {
     grid-gap: 18px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16 / 9;
+  }
+
+  .card {
+    margin: 20px 0;
   }
 }
