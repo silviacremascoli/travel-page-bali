@@ -1,13 +1,84 @@
 :root {
-  --default-font-family: "Poppins", serif;
+  --default-font-family: "Poppins", sans-serif;
+  --primary-color: #181525;
+  --secondary-color: #272435;
 }
 
 body {
   font-family: var(--default-font-family);
+  margin: 0 auto;
+  background: black;
 }
-h1 {
-  font-style: normal;
+header h1 {
   font-weight: 700;
   font-size: 96px;
-  line-height: 144px;
+  line-height: 1;
+  margin: 30px 0;
+}
+
+header h2 {
+  font-weight: 400;
+  font-size: 40px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+header h3 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 5px;
+}
+
+header a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--secondary-color);
+  padding: 16px 32px;
+  background: white;
+  display: inline-block;
+  margin-top: 32px;
+  border-radius: 4px;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url(../images/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 200px 0;
+}
+
+footer {
+  color: white;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
 }
