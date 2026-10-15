@@ -18,6 +18,8 @@ body {
 .grid {
   display: grid;
   grid-gap: 64px;
+  align-items: stretch;
+  grid-auto-rows: 1fr;
 }
 
 .grid-2-columns {
@@ -31,6 +33,7 @@ body {
 
 .grid-3-columns {
   grid-template-columns: auto auto auto;
+  grid-auto-rows: 1fr;
   grid-gap: 30px;
 }
 
@@ -169,8 +172,80 @@ section.secondary {
   aspect-ratio: 1 / 1;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
 .card-body {
   padding: 32px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body .btn {
+  margin-top: auto;
+}
+
+.card-body p:last-of-type {
+  margin-bottom: 48px;
+}
+
+.post {
+  background: white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+}
+
+.post-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.post-user h5,
+.post-body h5 {
+  color: black;
+  font-size: 14px;
+}
+
+.post-user span {
+  display: block;
+  color: #555;
+  font-size: 12px;
+  line-height: 1;
+  margin-top: 6px;
+}
+
+.post-image {
+  flex: 1;
+  min-height: 0;
+  object-fit: cover;
+}
+
+.post-body {
+  padding: 12px 16px 16px;
+}
+
+.post-body h5 {
+  margin-top: 8px;
+}
+
+.post-link {
+  color: #462cb3;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 .btn {
